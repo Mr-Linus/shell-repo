@@ -1,6 +1,6 @@
 ### shell-repo
 
-自己编写的shell脚本集
+个人编写的shell脚本集
 
 #### 已有功能
 
