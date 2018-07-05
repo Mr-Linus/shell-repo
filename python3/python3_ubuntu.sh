@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo apt-get install wget
 echo -n "Downloading Python3.6.5...."
 sudo wget http://mirrors.sohu.com/python/3.6.5/Python-3.6.5.tar.xz &> /dev/null && echo  -e   "[${green}Success${nc}]" || echo -e "[${red}Failed${nc}]"

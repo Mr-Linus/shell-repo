@@ -34,12 +34,6 @@ download(){
 }
 
 
-
-
-
-
-
-
 cat << EOF
 Download：
 Choose your system Type:
