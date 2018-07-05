@@ -14,4 +14,5 @@
 | ssh-dead-ban            | Linux           |
 | docker                  | Linux           |
 | vnc (仅Centos 7)        | yum 稳定版      |
+| mesos (含master、slave、marathon、marathon-lb)  | 1.5.0|
 
