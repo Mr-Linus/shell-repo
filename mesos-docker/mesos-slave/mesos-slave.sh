@@ -1,7 +1,13 @@
 #!/bin/bash
-read -p "Please input the mesos-slave running port:" slaveport
+read -p "Please input the mesos-slave running port:(default:5051)" slaveport
+if [ -z "${slaveport}" ];then
+  slaveport=5051
+fi
 read -p "Please input the mesos-master's ip:" masterip
-read -p "Please input the mesos-master's port:" masterport
+read -p "Please input the mesos-master's port:(default:5050)" masterport
+if [ -z "${masterport}" ];then
+	masterport=5050
+fi
 rm -rf ./tmp
 docker run -d --privileged --rm \
   -p $slaveport:5051 \
