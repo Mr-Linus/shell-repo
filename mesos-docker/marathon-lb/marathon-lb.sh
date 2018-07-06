@@ -5,6 +5,6 @@ read -p "Please input the marathon running port:" maraport
 docker run --rm -d \
   -p $lbport:9090\
   -e PORTS=9090 \
-  mesosphere/marathon-lb sse \
+  mesosphere/marathon-lb:v1.12.2 sse \
   --marathon http://$maraip:$maraport \
   --group external
