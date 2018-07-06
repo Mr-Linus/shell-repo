@@ -1,3 +1,4 @@
+#!/bin/bash
 read -p "Please input the marathon-lb running port:" lbport
 read -p "Please input the marathon running ip:" maraip
 read -p "Please input the marathon running port:" maraport

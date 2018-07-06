@@ -1,3 +1,4 @@
+#!/bin/bash
 read -p "Please input the mesos-master's ip:" masterip
 read -p "Please input the mesos-master's port:" masterport
 read -p "Please input the zookeeper's ip:" zookip
