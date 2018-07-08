@@ -17,4 +17,6 @@
 | mesos (含master、slave)  |      1.5.0     |
 | marathon                |     1.6.496    |
 |marathon-lb               |   1.12.2    |
+|harbor | 1.5.1 |
+|docker-compose | 1.21.2 |
 

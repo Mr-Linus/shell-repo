@@ -1,4 +1,9 @@
 #!/bin/bash
+green='\e[1;32m' # green
+red='\e[1;31m' # red
+blue='\e[1;34m' # blue  
+nc='\e[0m' # normal
+
 echo -n "Install Development Tools.."
 yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc wget make xz &> /dev/null && echo -e   "[${green}Success${nc}]" || echo -e "[${red}Failed${nc}]"
 echo -n "Downloading Python3.6.5...."
