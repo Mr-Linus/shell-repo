@@ -9,4 +9,4 @@ sudo cat > /etc/docker/daemon.json <<EOF
   	"registry-mirrors": ["https://registry.docker-cn.com"]
 }
 EOF
-sudo systemctl start docker
+sudo systemctl restart docker

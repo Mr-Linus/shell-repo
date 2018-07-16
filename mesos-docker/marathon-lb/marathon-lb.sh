@@ -8,7 +8,7 @@ read -p "Please input the marathon running port:(default:8080)" maraport
 if [ -z "${maraport}" ];then
 	maraport=8080
 fi
-docker run --rm -d \
+docker run -d --restart=always \
   -p $lbport:9090\
   -e PORTS=9090 \
   mesosphere/marathon-lb:v1.12.2 sse \

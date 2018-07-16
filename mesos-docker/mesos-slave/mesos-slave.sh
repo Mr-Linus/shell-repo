@@ -9,7 +9,7 @@ if [ -z "${masterport}" ];then
 	masterport=5050
 fi
 rm -rf ./tmp
-docker run -d --privileged --rm \
+docker run -d --privileged --restart=always \
   -p $slaveport:5051 \
   -e MESOS_PORT=5051 \
   -e MESOS_MASTER=zk://$masterip:$masterport/mesos \

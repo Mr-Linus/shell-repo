@@ -8,7 +8,7 @@ read -p "Please input the zookeeper's port:(default:2181)" zookport
 if [ -z "${zookport}" ];then
   zookport=2181
 fi
-docker run  -d  --rm \
+docker run  -d  --restart=always\
   --name mesos-master \
   -p $masterport:5050 \
   -e MESOS_PORT=5050 \

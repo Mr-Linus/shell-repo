@@ -13,7 +13,7 @@ read -p "Please input the marathon running port:(default:8080)" maraport
 if [ -z "${maraport}" ];then
   maraport=8080
 fi
-docker run --rm -d \
+docker run --rm -d --restart=always \
   -p $maraport:8080 \
   mesosphere/marathon:v1.6.496 \
   --master zk://$masterip:$masterport/mesos \
