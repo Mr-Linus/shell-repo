@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt-get install wget
 echo -n "Downloading Python3.6.5...."
-sudo wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tar.xz &> /dev/null && echo  -e   "[${green}Success${nc}]" || echo -e "[${red}Failed${nc}]"
+sudo wget http://mirrors.geekfan.top/python/Python-3.6.5.tar.xz &> /dev/null && echo  -e   "[${green}Success${nc}]" || echo -e "[${red}Failed${nc}]"
 echo -n "Unziping Packages...."
 sudo xz -d Python-3.6.5.tar.xz &> /dev/null 
 sudo tar xf Python-3.6.5.tar -C /usr/local/src/ &> /dev/null && echo  -e   "[${green}Success${nc}]" || echo -e "[${red}Failed${nc}]"
