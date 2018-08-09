@@ -7,7 +7,7 @@ nc='\e[0m' # normal
 echo -n "Install Development Tools.."
 yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc wget make xz &> /dev/null && echo -e   "[${green}Success${nc}]" || echo -e "[${red}Failed${nc}]"
 echo -n "Downloading Python3.6.5...."
-wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tar.xz &> /dev/null && echo  -e   "[${green}Success${nc}]" || echo -e "[${red}Failed${nc}]"
+wget http://mirrors.geekfan.top/python/Python-3.6.5.tar.xz &> /dev/null && echo  -e   "[${green}Success${nc}]" || echo -e "[${red}Failed${nc}]"
 echo -n "Unziping Packages...."
 xz -d Python-3.6.5.tar.xz &> /dev/null 
 tar xf Python-3.6.5.tar -C /usr/local/src/ &> /dev/null && echo  -e   "[${green}Success${nc}]" || echo -e "[${red}Failed${nc}]"
