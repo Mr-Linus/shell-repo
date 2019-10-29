@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo CHANNEL=stable
+CHANNEL=stable
 sudo curl -fsSL https://get.docker.com/ | sh -s -- --mirror Aliyun
 sudo mkdir -p /etc/docker
 sudo touch /etc/docker/daemon.json
